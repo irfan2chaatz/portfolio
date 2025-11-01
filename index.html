@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Irfan Ahmed — Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Irfan Imtiaz Munshi — Full Stack Developer (MERN)." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --accent: linear-gradient(90deg,#7c3aed,#06b6d4); }
+    .accent-bg{ background: linear-gradient(90deg,#7c3aed 0%, #06b6d4 100%); }
+    .card-glass{ background: rgba(255,255,255,0.04); backdrop-filter: blur(8px); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 text-slate-100 antialiased">
+  <nav class="fixed w-full z-30 top-0 backdrop-blur-md bg-black/30">
+    <div class="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#hero" class="font-semibold text-lg tracking-tight">Irfan Ahmed</a>
+      <div class="hidden md:flex gap-6 items-center">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menuBtn" aria-label="menu" class="p-2 rounded-md bg-white/5">☰</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-black/50">
+      <div class="px-6 py-4 flex flex-col gap-2">
+        <a href="#about" class="py-1">About</a>
+        <a href="#skills" class="py-1">Skills</a>
+        <a href="#projects" class="py-1">Projects</a>
+        <a href="#contact" class="py-1">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="min-h-screen flex items-center" style="padding-top:64px;">
+    <div class="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-sm mb-3 uppercase tracking-widest text-slate-300">Full Stack Developer — MERN</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Irfan Ahmed</h1>
+        <p class="mt-6 text-slate-300 max-w-xl">I build modern, maintainable web apps with a focus on clean UI and solid architecture. Graduated from <strong>The Hacking School, Hyderabad</strong> in Nov 2024 — passionate about full-stack development, problem solving, and shipping production quality projects.</p>
+        <div class="mt-8 flex gap-4">
+          <a href="#projects" class="px-5 py-2 rounded-full font-medium text-slate-900 bg-white/90 shadow-md">View Projects</a>
+          <a href="#contact" class="px-5 py-2 rounded-full border border-white/10 text-slate-200">Contact</a>
+        </div>
+        <div class="mt-8 text-sm text-slate-400">Available for freelancing & full-time roles • Based in India</div>
+      </div>
+      <div class="relative">
+        <div class="card-glass rounded-2xl p-6 shadow-lg border border-white/6">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center text-black font-bold">II</div>
+            <div>
+              <div class="font-semibold">Irfan Ahmed</div>
+              <div class="text-sm text-slate-300">Full Stack Developer — MERN</div>
+            </div>
+          </div>
+          <div class="mt-4 text-slate-300 text-sm">
+            <p><strong>Quick highlights:</strong></p>
+            <ul class="list-disc ml-5 mt-2 text-slate-400">
+              <li>Graduated from The Hacking School, Hyderabad — Nov 2024</li>
+              <li>Experienced building frontends with React + backend with Node/Express & MongoDB</li>
+              <li>Comfortable designing APIs, auth, and CRUD workflows</li>
+            </ul>
+          </div>
+          <div class="mt-6 flex gap-3">
+            <a class="px-3 py-2 rounded-md bg-white/5 text-sm" href="mailto:cruise.maniac123@gmail.com">Email</a>
+            <a class="px-3 py-2 rounded-md bg-white/5 text-sm" href="tel:+918097123627">Call</a>
+            <a class="px-3 py-2 rounded-md bg-white/5 text-sm" href="https://github.com/irfan2chaatz" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-6">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <article class="p-6 rounded-lg card-glass border border-white/6">
+          <h3 class="text-lg font-semibold">GitHub Search Engine (Frontend)</h3>
+          <p class="text-sm text-slate-300 mt-2">Enter a GitHub username and fetch profile details, avatar, and repositories. Frontend-only project that consumes GitHub's public API.</p>
+          <div class="mt-3 text-sm text-slate-400">Tech: React, Fetch API, CSS</div>
+          <a class="inline-block mt-3 px-3 py-1 rounded-md bg-white/5" href="https://github.com/irfan2chaatz/Github_search_engine" target="_blank">View on GitHub</a>
+        </article>
+
+        <article class="p-6 rounded-lg card-glass border border-white/6">
+          <h3 class="text-lg font-semibold">E-commerce (Frontend)</h3>
+          <p class="text-sm text-slate-300 mt-2">A basic ecommerce frontend built with React. Product listing, cart, and checkout UI (no payment integration).</p>
+          <div class="mt-3 text-sm text-slate-400">Tech: React, Context API, LocalStorage</div>
+          <a class="inline-block mt-3 px-3 py-1 rounded-md bg-white/5" href="https://github.com/irfan2chaatz/Ecommerce" target="_blank">View on GitHub</a>
+        </article>
+
+        <article class="p-6 rounded-lg card-glass border border-white/6">
+          <h3 class="text-lg font-semibold">THS_X — Social App (Full Stack)</h3>
+          <p class="text-sm text-slate-300 mt-2">A small social platform with posting, following, and basic feed features. Built with MERN for frontend & backend.</p>
+          <div class="mt-3 text-sm text-slate-400">Tech: React, Node, Express, MongoDB</div>
+          <a class="inline-block mt-3 px-3 py-1 rounded-md bg-white/5" href="https://github.com/thehackingschool/THS_X" target="_blank">View on GitHub</a>
+        </article>
+
+        <article class="p-6 rounded-lg card-glass border border-white/6">
+          <h3 class="text-lg font-semibold">DC-Infra — Data Center Admin (Full Stack)</h3>
+          <p class="text-sm text-slate-300 mt-2">Admin system for data center operations: equipment inventory, maintenance scheduling, and ticketing. Full stack with role-based features.</p>
+          <div class="mt-3 text-sm text-slate-400">Tech: MERN, Role-based auth, Scheduler</div>
+          <a class="inline-block mt-3 px-3 py-1 rounded-md bg-white/5" href="https://github.com/Bhuvaneswar56/DC-InfraSight" target="_blank">View on GitHub</a>
+        </article>
+
+        <article class="p-6 rounded-lg card-glass border border-white/6">
+          <h3 class="text-lg font-semibold">Datagate</h3>
+          <p class="text-sm text-slate-300 mt-2">DataGate is a full-stack CSV Validation & Upload System built with React, NestJS, and MySQL.
+Upload, validate, store, and analyze CSV data with automatic error logging and downloadable reports..</p>
+          <div class="mt-3 text-sm text-slate-400">Tech: NestJS, Typescript, REST API, Modular Components</div>
+          <a class="inline-block mt-3 px-3 py-1 rounded-md bg-white/5" href="https://github.com/irfan2chaatz/datagate" target="_blank">View on GitHub</a>
+        </article>
+
+        <article class="p-6 rounded-lg card-glass border border-white/6">
+          <h3 class="text-lg font-semibold">StackOverflow Clone</h3>
+          <p class="text-sm text-slate-300 mt-2">A functional clone of StackOverflow where users can ask, answer, and manage questions. Designed for learning full-stack concepts.</p>
+          <div class="mt-3 text-sm text-slate-400">Tech: Elixir, Phoenix, Authentication, CRUD</div>
+          <a class="inline-block mt-3 px-3 py-1 rounded-md bg-white/5" href="https://github.com/irfan2chaatz/stackoverflow-clone" target="_blank">View on GitHub</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-slate-900/30">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold mb-4">Get in touch</h2>
+      <p class="text-slate-300 mb-6">Email — <a class="underline" href="mailto:cruise.maniac123@gmail.com">cruise.maniac123@gmail.com</a> • Phone — <a href="tel:+918097123627">+91 80971 23627</a></p>
+      <div class="flex items-center justify-center gap-4">
+        <a class="px-4 py-2 rounded-md bg-white/5" href="mailto:cruise.maniac123@gmail.com">Email Me</a>
+        <a class="px-4 py-2 rounded-md bg-white/5" href="https://github.com/irfan2chaatz" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-slate-500">
+    <div class="max-w-5xl mx-auto px-6">© <span id="year"></span> Irfan Ahmed • Built with ❤️ • Graduated Nov 2024</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', ()=>{ mobileMenu.classList.toggle('hidden'); });
+    document.querySelectorAll('a[href^="#"]').forEach(link=>{
+      link.addEventListener('click', (e)=>{
+        const href = link.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href)?.scrollIntoView({ behavior:'smooth', block:'start' });
+          mobileMenu.classList.add('hidden');
+        }
+      })
+    })
+  </script>
+</body>
+</html>
